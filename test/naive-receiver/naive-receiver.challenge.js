@@ -1,6 +1,6 @@
 const { ethers } = require('hardhat');
 const { expect } = require('chai');
-
+ 
 describe('[Challenge] Naive receiver', function () {
     let deployer, user, attacker;
 
@@ -31,6 +31,8 @@ describe('[Challenge] Naive receiver', function () {
 
     it('Exploit', async function () {
         /** CODE YOUR EXPLOIT HERE */   
+        const attackPool = this.pool.connect(attacker)
+        
     });
 
     after(async function () {
