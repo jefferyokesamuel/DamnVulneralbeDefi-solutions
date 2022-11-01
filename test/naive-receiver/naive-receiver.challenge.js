@@ -35,6 +35,7 @@ describe('[Challenge] Naive receiver', function () {
         await deployer.sendTransaction({ to: attackPool.address, value:ETHER_IN_POOL})
         
         await deployer.sendTransaction({ to: attackPool.address, value: ETHER_IN_RECEIVER });
+        const deploy = this.pool.connect(deployer)
     });
 
     after(async function () {
