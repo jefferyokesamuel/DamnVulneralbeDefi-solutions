@@ -31,7 +31,6 @@ describe('[Challenge] Naive receiver', function () {
 
     it('Exploit', async function () {
         /** CODE YOUR EXPLOIT HERE */   
-        const attackPool = this.pool.connect(attacker)
         const deploy = this.pool.connect(deployer)
         await deploy.sendTransaction({ to: this.pool.address, value: ETHER_IN_POOL });
         const recieve = this.receiver.connect(attacker)
