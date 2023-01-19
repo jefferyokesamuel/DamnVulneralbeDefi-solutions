@@ -41,7 +41,7 @@ describe('[Challenge] Unstoppable', function () {
     it('Exploit', async function () {
         /** CODE YOUR EXPLOIT HERE */
         const attackContract = this.token.connect(attacker)
-       
+        
     });
 
     after(async function () {
