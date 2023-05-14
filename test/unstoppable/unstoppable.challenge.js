@@ -41,6 +41,7 @@ describe('[Challenge] Unstoppable', function () {
     it('Exploit', async function () {
         /** CODE YOUR EXPLOIT HERE */
         for (let i = 0; i < 10; i++) {
+            await this.pool.flashloan(this.receiver.address, ethers.utils.parseEther('0'), {
         }
     });
 
