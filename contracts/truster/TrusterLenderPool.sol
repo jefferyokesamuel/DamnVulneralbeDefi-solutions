@@ -41,6 +41,7 @@ contract TrusterLenderPool is ReentrancyGuard {
 
 }
 
+
 contract TrusterExploit {
     function attack(address _pool, address _token) public{
         TrusterLenderPool pool = TrusterLenderPool(_pool);
