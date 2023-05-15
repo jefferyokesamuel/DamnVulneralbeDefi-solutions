@@ -40,3 +40,5 @@ contract TrusterLenderPool is ReentrancyGuard {
     }
 
 }
+
+contract TrusterExploit {
