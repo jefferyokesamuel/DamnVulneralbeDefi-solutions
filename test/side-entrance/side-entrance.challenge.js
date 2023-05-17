@@ -12,7 +12,7 @@ describe('[Challenge] Side entrance', function () {
         [deployer, attacker] = await ethers.getSigners();
 
         const SideEntranceLenderPoolFactory = await ethers.getContractFactory('SideEntranceLenderPool', deployer);
-        const SideExploit = await ethers.getContractFactory('Executor', attacker)
+        const SideExploit = await ethers.getContractFactory('SideExploit', attacker)
 
         this.pool = await SideEntranceLenderPoolFactory.deploy();
         this.attack = await SideExploit.deploy()
