@@ -1,5 +1,6 @@
 const { ethers } = require('hardhat');
 const { expect } = require('chai');
+const { parseEther } = require('ethers/lib/utils');
 
 describe('[Challenge] Side entrance', function () {
 
